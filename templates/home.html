@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block head %}
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('static/images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            padding: 40px;
+            color: #fff;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Overlay to enhance text readability */
+            border-radius: 8px;
+        }
+
+        .hero-title {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #f4f4f4;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #f4f4f4;
+        }
+
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Info Section Styling */
+        .info-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .info-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+
+        }
+
+        .info-text {
+            font-size: 1.2em;
+
+        }
+
+        /* Adjust footer to be sticky */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1 class="hero-title">უსაფრთხო და სწრაფი ტრანსპორტირება</h1>
+            <p class="hero-subtitle" style="font-size: 40px">ევროპიდან საქართველოში</p>
+            <a href="/contacts">
+                <button class="cta-button"><span style="font-size: 25px">დაგვიკავშირდით</span></button>
+            </a>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section" style="">
+            <h2 class="info-title">არ გაქვთ ავტომობილი შერჩეული?</h2>
+            <p class="info-text">თქვენ შეგიძლიათ შეარჩიოთ თქვენთვის სასურველი ავტომანქანა ან სპეცტექნიკა მითითბულ ბმულებზე:</p>
+            <p class="info-text"><a target="_blank" href="https://www.mobile.de/"><img src="static/images/mobile logo.png" style="border-radius: 14px; height: 30px"></a></p>
+            <p class="info-text"><a  target="_blank" href="https://www.autoscout24.de/"><img style="border-radius: 17px; height: 40px;" src="static/images/autoscout_logo.png"></a></p>
+            <p class="info-text"> <a target="_blank" href="https://www.kleinanzeigen.de/"><img src="static/images/klein.png" style="height: 25px; border-radius: 15px"></a></p>
+            <p class="info-text"> <a target="_blank" href="https://www.trucks.nl/"><img src="static/images/nl.png" style="height: 43px; border-radius: 15px"></a></p>
+        </div>
+    </div>
+
+{% endblock %}

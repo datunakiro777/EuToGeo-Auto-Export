@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: auto auto auto; /* 3 rows */
+    gap: 30px; /* Spacing between carousels */
+}
+
+/* Spanning across different columns and rows */
+.top-carousel {
+    grid-column: span 2; /* Spans 2 columns */
+}
+
+.middle-carousel {
+    grid-column: span 1; /* Each takes 1 column */
+}
+
+.bottom-carousel {
+    grid-column: span 2; /* Spans 2 columns */
+}
+
+.carousel-container {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-title {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.carousel-price {
+    text-align: center;
+    font-size: 20px;
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Optional: Ensure carousel arrows are positioned within each individual carousel */
+.carousel-control-prev, .carousel-control-next {
+    filter: brightness(0) invert(1); /* Change arrow color to match */
+}

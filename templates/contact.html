@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .contact-info i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .contact-info .phone, .contact-info .email {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info .phone i, .contact-info .email i {
+            font-size: 24px;
+            color: #28a745;
+        }
+
+        .contact-info .social i {
+            font-size: 24px;
+            color: #495057;
+        }
+
+        .contact-info .social a {
+            margin: 0 10px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-info">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/4915210352484" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> +49 1521 0352484
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:eutogeoautoexport@gmail.com" class="email">
+                <i class="fas fa-envelope"></i> eutogeoautoexport@gmail.com
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/yourpage" target="_blank" class="social">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+
+            <!-- Phone Number -->
+            <a href="tel:+1234567890" class="phone">
+                <i class="fas fa-phone"></i> +995 551 31 30 29
+            </a>
+        </div>
+    </div>
+{% endblock %}
