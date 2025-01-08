@@ -10,7 +10,7 @@
     height: auto;
 }
 
-.carousel-title, .carousel-price {0
+.carousel-title, .carousel-price {
     position: absolute;
     left: 20px;
     color: #fff;
@@ -38,4 +38,14 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
-0
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .carousel-container {
+        margin-bottom: 20px;  /* Add space between carousels on mobile */
+    }
+}

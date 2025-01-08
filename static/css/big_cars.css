@@ -61,3 +61,14 @@ body {
 .carousel-control-prev, .carousel-control-next {
     filter: brightness(0) invert(1); /* Change arrow color to match */
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .carousel-container {
+        margin-bottom: 20px;  /* Add space between carousels on mobile */
+    }
+}
