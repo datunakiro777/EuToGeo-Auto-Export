@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <title>EuToGeo Auto import/აუტოიმპორტი ევროპიდან</title>
+    <title>EuToGeo Auto import/ავტოიმპორტი ევროპიდან</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     {% block head %}
 
@@ -19,7 +19,6 @@
         <ul class="nav-links">
             <li><a href="/home">Home/სახლი</a></li>
 
-            <!-- Dropdown for Transportation Prices -->
             <li class="dropdown">
                 <a href="/transportation_prices" class="drop-btn" onclick="toggleDropdown()">Transportation Prices/ტრანსპორტირების ფასები</a>
                 <div class="dropdown-content" id="dropdown-content">
@@ -27,7 +26,6 @@
                     <a href="/big_cars">big cars/სატვირთო ავტომობილი</a>
                 </div>
             </li>
-
             <li><a href="/about">About/ჩვენს შესახებ</a></li>
             <li><a href="/contacts">Contact/კონტაქტი</a></li>
         </ul>
